@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "NER chrome extension",
+    "version": "1.0.0",
+    "background": {
+        "scripts": ["popup.js"],
+        "persistent": false
+      },
+      
+    "content_scripts":[
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js":["content.js"],
+            "css":["content-style.css"]
+        }
+    ],
+    "web_accessible_resources": [
+        "content.js"
+      ],
+      
+    "browser_action":{
+        "default_popup":"popup.html"
+    },
+    "permissions": ["http://localhost/*","activeTab","downloads","tabs"]
+}

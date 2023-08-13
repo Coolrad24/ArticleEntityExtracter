@@ -1,0 +1,9 @@
+.PERSON, .ORG {
+    background-color: yellow;
+}
+.GPE {
+    background-color: lightblue;
+}
+.CARDINAL, .DATE {
+    background-color: lightgreen;
+}
